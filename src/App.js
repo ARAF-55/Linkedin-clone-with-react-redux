@@ -9,6 +9,7 @@ import Login from './Login';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
 import { login, logout } from './features/userSlice';
+import Widgets from './Widgets';
 
 function App() {
   const dispatch = useDispatch();
@@ -37,6 +38,7 @@ function App() {
         <div className='app__body'>
           <Sidebar />
           <Feed />
+          <Widgets />
         </div>)}
     </div>
   );
